@@ -1,6 +1,7 @@
 # Running the Shell
  In order to run the shell run the following command.
-  ``` make
+  ``` 
+  make
   ./a.out
   ```
 
