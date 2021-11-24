@@ -12,18 +12,25 @@
 - echo
 - pinfo
 - repeat
+- piping
+- redirection
+- control
+- fg 
+- bg
+- signal handling
+- replay
 
 
 # Files 
 
 - main.c
    It contains the functions 
- - removeSubstr  -  deletes a subtring 
- - delete_pro - Stored background is removed after completiom
- - if_done - Cheks if any of the background process are running
- - display - displays the prompt
- - pwd - Prints the current working directoy
- - command - Checks what command is being given as an input and directs to the corresponding function.
+   - removeSubstr  -  deletes a subtring 
+   - delete_pro - Stored background is removed after completiom
+   - if_done - Cheks if any of the background process are running
+   - display - displays the prompt
+   - pwd - Prints the current working directoy
+   - command - Checks what command is being given as an input and directs to the corresponding function.
  
 - cd.c 
    Implements  basic functionality and the flags  “.”, “..”, “-” and “~"
@@ -67,7 +74,7 @@
 - sig.c
       It contains the functions:
       - sig - Takes the job number (assigned by your shell) of a running job and sends the signal corresponding to signal number to that process.
-- contol.c 
+- control.c 
     It contains the function :
     - ctrl_z: Pushes any currently running foreground job into the background, and change its state from running to stopped when ctrl Z  is executed.
     - ctrl_c: Interrupts any currently running foreground job, by sending it the SIGINT signal when Ctrl C is executed.
